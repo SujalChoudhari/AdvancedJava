@@ -1,5 +1,10 @@
 import java.util.*;
 
+/*
+ * Write a Java program to create a vector that stores names of 10 employees, 
+ * later add 2 new employees, then remove eighth employee from vector, 
+ * copy the vector to another vector, display the values and size of new vector 
+ */
 public class One {
 
     public static Scanner sc =  new Scanner(System.in);

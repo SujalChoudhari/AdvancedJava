@@ -1,6 +1,13 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/*
+    In this problem we have given you three classes in the editor: 
+    - Student class 
+    - Rockstar class 
+    - Hacker class 
+    In the main method, we populated an ArrayList with several instances of these classes. count method calculates how many instances of each type is present in the ArrayList. (Use instanceof) 
+*/
 
 class Student {
     public String toString() {
