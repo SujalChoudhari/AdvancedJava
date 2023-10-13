@@ -3,15 +3,11 @@ import java.util.*;
  * Write a java program that maintains a separate linked list denoting marks of students from two divisions. Perform the following operations on Linked List: 
 
     Merge both the list 
-
     Sort 
-
-    Minimum and maximum 
-
-    Split failed and passed  
-
-    Count number of students getting above 90 marks 
- */
+    Minimum and maximum
+    Split failed and passed 
+    Count number of students getting above 90 marks
+*/
 
 public class Five {
     public static void main(String[] args) {
@@ -23,6 +19,13 @@ public class Five {
         linkedList.add(98);
         linkedList.add(94);
         linkedList.add(33);
+        linkedList.add(10 + 4);
+        linkedList.add(20 + 4);
+        linkedList.add(40 + 4);
+        linkedList.add(90 + 4);
+        linkedList.add(98 + 4);
+        linkedList.add(94 + 4);
+        linkedList.add(33 + 4);
 
         LinkedList<Integer> linkedList2 = new LinkedList<Integer>();
         linkedList2.add(15);
@@ -32,6 +35,13 @@ public class Five {
         linkedList2.add(95);
         linkedList2.add(95);
         linkedList2.add(35);
+        linkedList2.add(15 + 5);
+        linkedList2.add(25 + 5);
+        linkedList2.add(45 + 5);
+        linkedList2.add(95 + 5);
+        linkedList2.add(95 + 5);
+        linkedList2.add(95 + 5);
+        linkedList2.add(35 + 5);
 
         // Merge
         LinkedList<Integer> mergedList = (LinkedList<Integer>) linkedList.clone();
@@ -59,17 +69,13 @@ public class Five {
         System.out.println("Passed:" + passedCandidates);
         System.out.println("Failed:" + failedCandidates);
 
-
-        LinkedList<Integer> toppers =  new LinkedList<Integer>();
-        for(int i: mergedList){
-            if(i >90)
-            toppers.add(i);
+        LinkedList<Integer> toppers = new LinkedList<Integer>();
+        for (int i : mergedList) {
+            if (i > 90)
+                toppers.add(i);
         }
-        
 
         System.out.println("Num of Toppers: " + toppers.size());
-
-
 
     }
 }
