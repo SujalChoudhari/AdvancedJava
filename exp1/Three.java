@@ -21,9 +21,9 @@ public class Three {
         int size = Integer.parseInt(sc.nextLine());
         while (size-- > 0) {
             set.add(sc.nextLine());
-            System.out.println("Total No of unique Inputs: " + set.size());
+            System.out.println("\nTotal No of unique Inputs: " + set.size());
         }
 
-
+        System.out.println(set);
     }
 }
